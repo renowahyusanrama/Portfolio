@@ -3,248 +3,418 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ren. Personal Portofolio</title>
+    <title>Ren. Personal Portfolio</title>
     <link rel="icon" href="./img/logo.png" type="image/icon type">
-    <!-- #CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- #box icon -->
     
-  <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-  <!--remox icon-->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-
-<header>
-  <div class="bx bx-menu" id="menu-icon"></div>
-  <ul class="navlist">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Skills</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#contact">Contact</a></li>
-
-  </ul>
-<div class="top-btnn">
-  <a href="https://github.com/renowahyusanrama" target="_blank" class="h-btn">GitHub</a>
-</div>
-
-</header>
-
-
-<section class="hero" id="home">
-  <video autoplay muted loop class="background-video">
-    <source src="./Video/bg.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-<div class="main-content" data-aos="fade-in">
-  <h4>Hi, There</h4>
-  <h1>I'm <span>Ren</span></h1>
-  <p><span class="highlight">This is my portfolio.</span></p>
-<div class="social">
-  <a href="https://github.com/renowahyusanrama" target="_blank"><i class="ri-github-fill"></i></a>
-  <a href="https://www.instagram.com/renowahyusanramaa?igsh=dnMwZno0OHo2Z3E5" target="_blank"><i class="ri-instagram-fill"></i></a>
-  <a href="https://www.tiktok.com/@buagusejagat?_t=ZS-90xZDTff8AK&_r=1" target="_blank"><i class="ri-tiktok-fill"></i></a>
-</div>
-<div class="main-btn">
-  <a href="https://wa.me/62811456999" target="_blank" class="btn">Contact Me</a>
-  <a href="mailto:onmeren@gmail.com" target="_blank" class="btn btn2">Email</a>
-</div>
-
-</div>
-
-</section>
-
-<section class="about" id="about">
-  <div class="about-img" data-aos="zoom-in-down">
-    <img src="./img/about.jpg" >
-  </div>
-<div class="about-text" data-aos="zoom-in-up">
-  <h2>I'm a  <span>Universitas Muhammadiyah Malang</span><br>
-  Student </h2>
-  <div class="exp-area">
-    <p class="exp">
-      Experience 
-      <span>Newbie</span>
-    </p>
-    
-    <p class="exp">
-      Speciality:
-      <span>Web Developer</span>
-    </p>
-    <p class="exp">
-      Address: 
-      <a href="https://maps.app.goo.gl/rATjphT2G26DsyVw7" target="_blank">
-        <span>West Java, Indonesia</span>
-      </a>
-    </p>
-    
-    <p class="exp">
-      Email: 
-      <a href="mailto:onmeren@gmail.com" target="_blank">
-        <span>onmeren@gmail.com</span>
-      </a>
-    </p>
-    
-    <p class="exp">
-      Phone: 
-      <a href="https://wa.me/62811456999" target="_blank">
-        <span>+62 11-456-999</span>
-      </a>
-    </p>
-    
-    <p class="exp">
-      Freelance: 
-      <span>Available</span>
-    </p>
-  </div>
-  <a href="https://github.com/renowahyusanrama" target="_blank" class="btn">View All Projects</a>
-</div>
-
-</section>
-
-<section class="services" id="services">
-  <div class="center-text" data-aos="fade-down">
-    <h2>My <span>Skills</span> </h2>
-  </div>
-  <div class="services-content" data-aos="zoom-in-up">
-
-    <div class="box">
-
-      <img class="logo-sosmed" src="./img/s-1.svg" alt="">
-      <h3>UI/UX Design</h3>
-      <p style="text-align: justify">Sometimes try about UI/UX Design and ready to learn about UI/UX Design</p>
-      <a href="https://www.instagram.com/renowahyusanramaa?igsh=dnMwZno0OHo2Z3E5" target="_blank">My Instagram
- <i class="ri-arrow-right-line"></i>
-
-      </a>
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="ri-sun-line" id="themeIcon"></i>
     </div>
 
-    <div class="box">
-
-      <img class="logo-sosmed" src="./img/s-2.svg" alt="">
-      <h3>Graphic Design</h3>
-      <p style="text-align: justify">I'm Happy to make a Design and you can check it at my Instagram</p>
-      <a href="https://www.instagram.com/renowahyusanramaa?igsh=dnMwZno0OHo2Z3E5" target="_blank">My Instagram
- <i class="ri-arrow-right-line"></i>
-
-      </a>
-    </div>
-
-    <div class="box">
-
-      <img class="logo-sosmed" src="./img/s-3.svg" alt="">
-      <h3>GitHub Project</h3>
-      <p style="text-align: justify;">You can see my project and repository at GitHub. Many things in my repository</p>
-      <a href="https://github.com/renowahyusanrama" target="_blank">Check it!
- <i class="ri-arrow-right-line"></i>
-
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<section class="portfolio" id="portfolio">
-<div class="center-text" data-aos="fade-down">
-  <h2>My <span>Portfolio</span></h2>
-</div>
-
-<div class="Portfolio-content" data-aos="zoom-in-up">
-  <div class="row">
-    <a href="https://renowahyusanrama.github.io/Undangan-Digital/" target="_blank">
-      <img src="./img/port-1.jpg" alt="">
-      <div class="main-row">
-        <div class="row-text">
-          <h5>Website <Undangan-Digital></Undangan-Digital></h5>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6"></div>
         </div>
-        <div class="row-icon">
-  <i class="ri-github-fill"></i>
-    </a>
-      </div>
+        <div class="particles" id="particles"></div>
     </div>
-    <h4>Order the Invitation in Simple Ways</h4>
-  </div>
-  <div class="row">
-    <a href="https://github.com/renowahyusanrama?tab=repositories" target="_blank">
-      <img src="./img/port-2.jpg" alt="">
-      <div class="main-row">
-        <div class="row-text">
-          <h5>Flutter App</h5>
+
+    <!-- Navigation -->
+    <header>
+        <a href="#" class="logo">Ren<span>.</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navlist">
+            <li><a href="#home" data-section="home">Home</a></li>
+            <li><a href="#about" data-section="about">About</a></li>
+            <li><a href="#services" data-section="services">Skills</a></li>
+            <li><a href="#portfolio" data-section="portfolio">Portfolio</a></li>
+            <li><a href="#contact" data-section="contact">Contact</a></li>
+        </ul>
+        <div class="top-btnn">
+            <a href="https://github.com/renowahyusanrama" target="_blank" class="h-btn">
+                <i class="ri-github-fill"></i> GitHub
+            </a>
         </div>
-        <div class="row-icon">
-  <i class="ri-github-fill"></i>
-    </a>
-      </div>
-    </div>
-    <h4>Application With Flutter</h4>
-  </div>
-  <div class="row">
-    <a href="https://github.com/renowahyusanrama?tab=repositories" target="_blank">      
-      <img src="./img/port-3.jpg" alt="">
-      <div class="main-row">
-        <div class="row-text">
-          <h5>Flutter</h5>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <video autoplay muted loop class="background-video">
+            <source src="./Video/bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="hero-bg-animation"></div>
+        
+        <div class="main-content" data-aos="fade-in">
+            <div class="greeting-text">
+                <h4>Hi, There</h4>
+                <div class="typing-text">
+                    <h1>I'm <span>Ren</span></h1>
+                    <div class="cursor"></div>
+                </div>
+            </div>
+            
+            <p class="hero-description">
+                <span class="highlight">This is my portfolio.</span>
+                <span class="typing-subtitle"></span>
+            </p>
+            
+            <div class="social">
+                <a href="https://github.com/renowahyusanrama" target="_blank" class="social-link">
+                    <i class="ri-github-fill"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.instagram.com/renowahyusanramaa?igsh=dnMwZno0OHo2Z3E5" target="_blank" class="social-link">
+                    <i class="ri-instagram-fill"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.tiktok.com/@buagusejagat?_t=ZS-90xZDTff8AK&_r=1" target="_blank" class="social-link">
+                    <i class="ri-tiktok-fill"></i>
+                    <span>TikTok</span>
+                </a>
+            </div>
+            
+            <div class="main-btn">
+                <a href="https://wa.me/62811456999" target="_blank" class="btn">
+                    <i class="ri-whatsapp-line"></i> Contact Me
+                </a>
+                <a href="mailto:onmeren@gmail.com" target="_blank" class="btn btn2">
+                    <i class="ri-mail-line"></i> Email
+                </a>
+            </div>
         </div>
-        <div class="row-icon">
-  <i class="ri-github-fill"></i>
-    </a>
-      </div>
-    </div>
-    <h4>Simple Purchase Application</h4>
-  </div>
-  <div class="row">
-    <a href="https://renowahyusanrama.github.io/Gal/" target="_blank">
-      <img src="./img/port-4.jpg" alt="">
-      <div class="main-row">
-        <div class="row-text">
-          <h5>HTML CSS JS</h5>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span>Scroll Down</span>
         </div>
-        <div class="row-icon">
-  <i class="ri-github-fill"></i>
-    </a>
-      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-header" data-aos="fade-down">
+            <h2>About <span>Me</span></h2>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="about-container">
+            <div class="about-img" data-aos="zoom-in-down">
+                <div class="img-wrapper">
+                    <img src="./img/about.jpg" alt="About Me">
+                    <div class="img-overlay"></div>
+                    <div class="img-border"></div>
+                </div>
+            </div>
+            
+            <div class="about-text" data-aos="zoom-in-up">
+                <h2>I'm a <span>Universitas Muhammadiyah Malang</span><br>Student</h2>
+                
+                <div class="exp-area">
+                    <div class="exp-item">
+                        <i class="ri-briefcase-line"></i>
+                        <p class="exp">
+                            Experience <span>Newbie</span>
+                        </p>
+                    </div>
+                    
+                    <div class="exp-item">
+                        <i class="ri-code-line"></i>
+                        <p class="exp">
+                            Speciality: <span>Web Developer</span>
+                        </p>
+                    </div>
+                    
+                    <div class="exp-item">
+                        <i class="ri-map-pin-line"></i>
+                        <p class="exp">
+                            Address: 
+                            <a href="https://maps.app.goo.gl/rATjphT2G26DsyVw7" target="_blank">
+                                <span>West Java, Indonesia</span>
+                            </a>
+                        </p>
+                    </div>
+                    
+                    <div class="exp-item">
+                        <i class="ri-mail-line"></i>
+                        <p class="exp">
+                            Email: 
+                            <a href="mailto:onmeren@gmail.com" target="_blank">
+                                <span>onmeren@gmail.com</span>
+                            </a>
+                        </p>
+                    </div>
+                    
+                    <div class="exp-item">
+                        <i class="ri-phone-line"></i>
+                        <p class="exp">
+                            Phone: 
+                            <a href="https://wa.me/62811456999" target="_blank">
+                                <span>+62 11-456-999</span>
+                            </a>
+                        </p>
+                    </div>
+                    
+                    <div class="exp-item">
+                        <i class="ri-time-line"></i>
+                        <p class="exp">
+                            Freelance: <span>Available</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="about-btn">
+                    <a href="https://github.com/renowahyusanrama" target="_blank" class="btn">
+                        <i class="ri-github-fill"></i> View All Projects
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header" data-aos="fade-down">
+            <h2>My <span>Skills</span></h2>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="services-content" data-aos="zoom-in-up">
+            <div class="box">
+                <div class="box-icon">
+                    <img class="logo-sosmed" src="./img/s-1.svg" alt="UI/UX Design">
+                    <div class="icon-bg"></div>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Sometimes try about UI/UX Design and ready to learn about UI/UX Design</p>
+                <div class="skill-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-skill="75"></div>
+                    </div>
+                    <span class="skill-percentage">75%</span>
+                </div>
+                <a href="https://www.instagram.com/renowahyusanramaa?igsh=dnMwZno0OHo2Z3E5" target="_blank">
+                    My Instagram <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+
+            <div class="box">
+                <div class="box-icon">
+                    <img class="logo-sosmed" src="./img/s-2.svg" alt="Graphic Design">
+                    <div class="icon-bg"></div>
+                </div>
+                <h3>Graphic Design</h3>
+                <p>I'm Happy to make a Design and you can check it at my Instagram</p>
+                <div class="skill-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-skill="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <a href="https://www.instagram.com/renowahyusanramaa?igsh=dnMwZno0OHo2Z3E5" target="_blank">
+                    My Instagram <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+
+            <div class="box">
+                <div class="box-icon">
+                    <img class="logo-sosmed" src="./img/s-3.svg" alt="GitHub Project">
+                    <div class="icon-bg"></div>
+                </div>
+                <h3>GitHub Project</h3>
+                <p>You can see my project and repository at GitHub. Many things in my repository</p>
+                <div class="skill-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-skill="70"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
+                </div>
+                <a href="https://github.com/renowahyusanrama" target="_blank">
+                    Check it! <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="section-header" data-aos="fade-down">
+            <h2>My <span>Portfolio</span></h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="Portfolio-content" data-aos="zoom-in-up">
+            <div class="row">
+                <a href="https://renowahyusanrama.github.io/Undangan-Digital/" target="_blank">
+                    <div class="portfolio-img">
+                        <img src="./img/port-1.jpg" alt="Undangan Digital">
+                        <div class="portfolio-overlay">
+                            <i class="ri-external-link-line"></i>
+                        </div>
+                    </div>
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Website <Undangan-Digital></Undangan-Digital></h5>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div>
+                    </div>
+                </a>
+                <h4>Order the Invitation in Simple Ways</h4>
+            </div>
+
+            <div class="row">
+                <a href="https://github.com/renowahyusanrama?tab=repositories" target="_blank">
+                    <div class="portfolio-img">
+                        <img src="./img/port-2.jpg" alt="Flutter App">
+                        <div class="portfolio-overlay">
+                            <i class="ri-external-link-line"></i>
+                        </div>
+                    </div>
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Flutter App</h5>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div>
+                    </div>
+                </a>
+                <h4>Application With Flutter</h4>
+            </div>
+
+            <div class="row">
+                <a href="https://github.com/renowahyusanrama?tab=repositories" target="_blank">
+                    <div class="portfolio-img">
+                        <img src="./img/port-3.jpg" alt="Flutter">
+                        <div class="portfolio-overlay">
+                            <i class="ri-external-link-line"></i>
+                        </div>
+                    </div>
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Flutter</h5>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div>
+                    </div>
+                </a>
+                <h4>Simple Purchase Application</h4>
+            </div>
+
+            <div class="row">
+                <a href="https://renowahyusanrama.github.io/Gal/" target="_blank">
+                    <div class="portfolio-img">
+                        <img src="./img/port-4.jpg" alt="HTML CSS JS">
+                        <div class="portfolio-overlay">
+                            <i class="ri-external-link-line"></i>
+                        </div>
+                    </div>
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>HTML CSS JS</h5>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div>
+                    </div>
+                </a>
+                <h4>Sekedar Gabut Saja</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-header" data-aos="fade-down">
+            <h2>Contact <span>Me</span></h2>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="contact-form" data-aos="zoom-in">
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Your name" required id="name">
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address..." required id="email">
+                    <label for="email">Email Address</label>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write Message Here." required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="send-btn">
+                    <span>Send Message</span>
+                    <i class="ri-send-plane-line"></i>
+                </button>
+            </form>
+            <div class="form-message" id="formMessage"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="copyright">
+            <p>Copyright 2024 Ren. All Right Reserved.</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://github.com/renowahyusanrama" target="_blank">
+                <i class="ri-github-fill"></i>
+            </a>
+            <a href="https://www.instagram.com/renowahyusanramaa?igsh=dnMwZno0OHo2Z3E5" target="_blank">
+                <i class="ri-instagram-fill"></i>
+            </a>
+            <a href="https://www.tiktok.com/@buagusejagat?_t=ZS-90xZDTff8AK&_r=1" target="_blank">
+                <i class="ri-tiktok-fill"></i>
+            </a>
+        </div>
+        <a href="#home" class="scroll-top">
+            <i class="ri-arrow-up-s-fill"></i>
+        </a>
     </div>
-    <h4>Sekedar Gabut Saja</h4>
-  </div>
-</section>
 
-<section class="contact" id="contact">
-  <div class="center-text" data-aos="fade-down">
-    <h2>Contact<span> Me</span></h2>
-  </div>
-  <div class="contact-form" data-aos="zoom-in">
-    <form action="">
-      <input type="text" placeholder="Your name" required>
-      <input type="email" placeholder="Email Address..." required>
-      <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here." required></textarea>
-      <input type="submit" value="Send Message" class="send-btn">
-    </form>
-  </div>
-</section>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Loading...</div>
+        </div>
+    </div>
 
-<div class="footer">
-  <div class="copyright">
-    <p>Copyright 2024 Ren. All Right Reserved.</p>
-  </div>
-  <a href="#home" class="scroll-top">
-    <i class="ri-arrow-up-s-fill"></i>
-  </a>
-</div>
-
-
-<script src="./script.js"></script>
-  
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({
-offset:300,
-duration:1400,
-  });
-</script>
-
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="theme.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            duration: 1400,
+            easing: 'ease-in-out',
+            once: false,
+            mirror: true
+        });
+    </script>
 </body>
 </html>
