@@ -12,6 +12,6 @@ menu.onclick = () =>{
 }
 
 window.onscroll = () =>{
-    menu.remove.toggle('bx-x');
-    navlist.remove.toggle('active');
+    menu.classList.remove('bx-x');
+    navlist.classList.remove('active');
 }
