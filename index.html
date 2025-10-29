@@ -15,14 +15,17 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
+    <!-- Font Awesome for Theme Toggle -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Theme Toggle Button -->
-    <div class="theme-toggle" id="themeToggle">
-        <i class="ri-sun-line" id="themeIcon"></i>
-    </div>
+    <!-- Theme Toggle Button - FIXED POSITIONING -->
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme (Ctrl+Shift+T)">
+        <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
 
     <!-- Animated Background -->
     <div class="animated-bg">
@@ -39,7 +42,7 @@
 
     <!-- Navigation -->
     <header>
-        <a href="#" class="logo">Ren<span>.</span></a>
+        <a href="#home" class="logo">Ren<span>.</span></a>
         <div class="bx bx-menu" id="menu-icon"></div>
         <ul class="navlist">
             <li><a href="#home" data-section="home">Home</a></li>
@@ -390,10 +393,12 @@
                 <i class="ri-tiktok-fill"></i>
             </a>
         </div>
-        <a href="#home" class="scroll-top">
-            <i class="ri-arrow-up-s-fill"></i>
-        </a>
     </div>
+
+    <!-- Scroll to Top Button - FIXED -->
+    <button class="scroll-top" id="scrollTop" title="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- Loading Screen -->
     <div class="loading-screen" id="loadingScreen">
