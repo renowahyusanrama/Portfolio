@@ -487,11 +487,12 @@ form .send-btn:hover {
   }
   #menu-icon {
     display: block;
+    order: -1;
   }
   .navlist {
     position: absolute;
     top: 100%;
-    right: -100%;
+    left: -100%;
     width: 255px;
     min-height: 100vh;
     display: flex;
@@ -505,7 +506,7 @@ form .send-btn:hover {
     font-size: 22px;
   }
   .navlist.active {
-    right: 0;
+    left: 0;
   }
   .hero {
     background-position: center;
