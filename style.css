@@ -313,6 +313,13 @@ span {
   transform: scale(1.05);
 }
 
+/* Top button container for GitHub */
+.top-btnn {
+  display: flex;
+  align-items: center;
+  z-index: 999;
+}
+
 section {
   padding: 110px 16% 90px;
   position: relative;
@@ -1425,7 +1432,7 @@ header.sticky {
 @media (max-width: 768px) {
   .theme-toggle {
     top: 15px;
-    right: 15px;
+    right: 80px; /* Move left to avoid GitHub button */
     width: 45px;
     height: 45px;
     z-index: 10003;
@@ -1433,6 +1440,11 @@ header.sticky {
   
   .theme-toggle i {
     font-size: 20px;
+  }
+  
+  /* Hide GitHub button in header on mobile to prevent overlap */
+  .top-btnn {
+    display: none;
   }
   
   header {
@@ -1484,6 +1496,13 @@ header.sticky {
   .social-link {
     padding: 0.6rem 1rem;
     font-size: 0.8rem;
+  }
+  
+  /* Make GitHub link more prominent on mobile since header GitHub is hidden */
+  .social-link:first-child {
+    background: var(--main-color);
+    color: var(--bg-color);
+    transform: scale(1.05);
   }
   
   .main-btn {
@@ -1548,13 +1567,18 @@ header.sticky {
   
   .theme-toggle {
     top: 10px;
-    right: 10px;
+    right: 70px; /* Move left to avoid GitHub button */
     width: 40px;
     height: 40px;
   }
   
   .theme-toggle i {
     font-size: 18px;
+  }
+  
+  /* Ensure GitHub button is hidden on small mobile */
+  .top-btnn {
+    display: none;
   }
   
   header {
@@ -1595,6 +1619,13 @@ header.sticky {
   .social-link {
     padding: 0.5rem 0.8rem;
     font-size: 0.75rem;
+  }
+  
+  /* Make GitHub link more prominent on small mobile */
+  .social-link:first-child {
+    background: var(--main-color);
+    color: var(--bg-color);
+    transform: scale(1.05);
   }
   
   .btn {
